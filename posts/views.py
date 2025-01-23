@@ -31,6 +31,8 @@ def individualPost(request,id):
         if(post['id']==id):
             return render(request,'individual_post.html',{'one_post':post})
     
+    return HttpResponseNotFound('<p> page not found</p>')
+    
 
 # def home(request):
 #     html=""
